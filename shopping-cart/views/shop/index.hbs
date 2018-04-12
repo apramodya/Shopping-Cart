@@ -1,113 +1,21 @@
 <div class="row">
-    <div class="col-sm-6 col-md-4">
-        <div class="card">
-            <img class="card-img-top" src="https://zeerk.com/mod/uploads/2017/03/book-1024x793.jpg"
-                 alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit fringilla justo, at volutpat
-                    nunc venenatis vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nisl urna,
-                    tempor nec felis ac, pulvinar sagittis sem.
-                </p>
-                <div class="clearfix">
-                    <p class="font-weight-bold float-left">Price: 10$</p>
-                    <a href="#" class="btn btn-success float-right">Add to cart</a>
+    {{# each products }}
+        <div class="col-sm-6 col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="{{ this.imagePath }}"
+                     alt="Item Image">
+                <div class="card-body">
+                    <h5 class="card-title">{{ this.title }}</h5>
+                    <p class="card-text">
+                        {{ this.description }}
+                    </p>
+                    <div class="clearfix">
+                        <p class="font-weight-bold float-left">Price: {{ this.price }}$</p>
+                        <a href="#" class="btn btn-success float-right">Add to cart</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="col-sm-6 col-md-4">
-        <div class="card">
-            <img class="card-img-top" src="https://zeerk.com/mod/uploads/2017/03/book-1024x793.jpg"
-                 alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit fringilla justo, at volutpat
-                    nunc venenatis vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nisl urna,
-                    tempor nec felis ac, pulvinar sagittis sem.
-                </p>
-                <div class="clearfix">
-                    <p class="font-weight-bold float-left">Price: 10$</p>
-                    <a href="#" class="btn btn-success float-right">Add to cart</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-6 col-md-4">
-        <div class="card">
-            <img class="card-img-top" src="https://zeerk.com/mod/uploads/2017/03/book-1024x793.jpg"
-                 alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit fringilla justo, at volutpat
-                    nunc venenatis vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nisl urna,
-                    tempor nec felis ac, pulvinar sagittis sem.
-                </p>
-                <div class="clearfix">
-                    <p class="font-weight-bold float-left">Price: 10$</p>
-                    <a href="#" class="btn btn-success float-right">Add to cart</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    {{/each}}
 </div>
-<br>
-<div class="row">
-    <div class="col-sm-6 col-md-4">
-        <div class="card">
-            <img class="card-img-top" src="https://zeerk.com/mod/uploads/2017/03/book-1024x793.jpg"
-                 alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit fringilla justo, at volutpat
-                    nunc venenatis vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nisl urna,
-                    tempor nec felis ac, pulvinar sagittis sem.
-                </p>
-                <div class="clearfix">
-                    <p class="font-weight-bold float-left">Price: 10$</p>
-                    <a href="#" class="btn btn-success float-right">Add to cart</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-6 col-md-4">
-        <div class="card">
-            <img class="card-img-top" src="https://zeerk.com/mod/uploads/2017/03/book-1024x793.jpg"
-                 alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit fringilla justo, at volutpat
-                    nunc venenatis vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nisl urna,
-                    tempor nec felis ac, pulvinar sagittis sem.
-                </p>
-                <div class="clearfix">
-                    <p class="font-weight-bold float-left">Price: 10$</p>
-                    <a href="#" class="btn btn-success float-right">Add to cart</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-6 col-md-4">
-        <div class="card">
-            <img class="card-img-top" src="https://zeerk.com/mod/uploads/2017/03/book-1024x793.jpg"
-                 alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit fringilla justo, at volutpat
-                    nunc venenatis vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nisl urna,
-                    tempor nec felis ac, pulvinar sagittis sem.
-                </p>
-                <div class="clearfix">
-                    <p class="font-weight-bold float-left">Price: 10$</p>
-                    <a href="#" class="btn btn-success float-right">Add to cart</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
