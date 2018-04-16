@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="/">E-Shop</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -18,9 +18,14 @@
                     <i class="fas fa-user"></i> User Management
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Account</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Logout</a>
+                    {{# if login }}
+                        <a class="dropdown-item" href="/user/profile">Account</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/user/logout">Logout</a>
+                    {{ else  }}
+                        <a class="dropdown-item" href="/user/signin">Sign in</a>
+                        <a class="dropdown-item" href="/user/signup">Sign up</a>
+                    {{/if}}
                 </div>
             </li>
         </ul>
